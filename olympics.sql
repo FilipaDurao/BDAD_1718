@@ -73,11 +73,11 @@ CREATE TABLE Pais (
 -- Table: Recorde
 DROP TABLE IF EXISTS Recorde;
 CREATE TABLE Recorde (
-        ID INT PRIMARY KEY, 
-        Valor DOUBLE, 
-        Data STRING, 
-        IdAtleta INT REFERENCES Atleta (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdTipoDeRecorde INT REFERENCES TipoDeRecord (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
+        ID INT PRIMARY KEY,
+        Valor DOUBLE,
+        Data STRING,
+        IdAtleta INT REFERENCES Atleta (ID) ON DELETE SET NULL ON UPDATE CASCADE,
+        IdTipoDeRecorde INT REFERENCES TipoDeRecord (ID) ON DELETE SET NULL ON UPDATE CASCADE,
         IdModalidade INT REFERENCES Modalidade (ID) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
@@ -98,7 +98,7 @@ CREATE TABLE TipoDeJogos (
 -- Table: TipoDeRecord
 DROP TABLE IF EXISTS TipoDeRecord;
 CREATE TABLE TipoDeRecord (
-        ID INT PRIMARY KEY, 
+        ID INT PRIMARY KEY,
         Nome STRING
 );
 
