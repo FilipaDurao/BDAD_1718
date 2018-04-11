@@ -1,9 +1,9 @@
 --
--- File generated with SQLiteStudio v3.1.1 on sábado abr 7 12:13:11 2018
+-- File generated with SQLiteStudio v3.1.1 on quarta abr 11 10:18:11 2018
 --
 -- Text encoding used: UTF-8
 --
-PRAGMA foreign_keys = off;
+PRAGMA foreign_keys = ON;
 BEGIN TRANSACTION;
 
 -- Table: Atleta
@@ -14,32 +14,35 @@ CREATE TABLE Atleta (
         DataDeNascimento STRING, 
         Sexo CHAR CHECK (Sexo = 'F' || Sexo = 'M'), 
         Peso DOUBLE, 
-        Altura DOUBLE
+        Altura DOUBLE, 
+        SiglaPais STRING REFERENCES Pais (Sigla) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 -- Table: Desporto
 DROP TABLE IF EXISTS Desporto;
 CREATE TABLE Desporto (
         ID INT PRIMARY KEY, 
-        Nome STRING
+        Nome STRING UNIQUE
 );
 
 -- Table: EdicaoAtletaEvento
 DROP TABLE IF EXISTS EdicaoAtletaEvento;
 CREATE TABLE EdicaoAtletaEvento (
-        Ano INT REFERENCES EdiçaoDosJogos (Ano) ON DELETE SET NULL ON UPDATE CASCADE, 
+        Ano INT REFERENCES EdicaoDosJogos ON DELETE SET NULL ON UPDATE CASCADE, 
         IdAtleta INT REFERENCES Atleta (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
         IdEvento INT REFERENCES Evento (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
+        Posicao INT, 
+        Valor DOUBLE, 
         PRIMARY KEY (Ano, IdAtleta, IdEvento)
 );
 
--- Table: EdiçaoDosJogos
-DROP TABLE IF EXISTS EdiçaoDosJogos;
-CREATE TABLE EdiçaoDosJogos (
+-- Table: EdicaoDosJogos
+DROP TABLE IF EXISTS EdicaoDosJogos;
+CREATE TABLE EdicaoDosJogos (
         Ano INT PRIMARY KEY, 
         Cidade STRING, 
         IdTipoDeJogos INT REFERENCES TipoDeJogos (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdPais INT REFERENCES Pais (ID) ON DELETE SET NULL ON UPDATE CASCADE
+        SiglaPais STRING REFERENCES Pais (Sigla) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 -- Table: Evento
@@ -48,41 +51,23 @@ CREATE TABLE Evento (
         ID INT PRIMARY KEY, 
         Data STRING, 
         IdTipoDeEvento INT REFERENCES TipoDeEvento (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdModalidade INT REFERENCES Modalidade (ID) ON DELETE SET NULL ON UPDATE CASCADE
+        IdModalidade INT REFERENCES Modalidade (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
+        Sexo CHAR CHECK (Sexo = 'F' || Sexo = 'M')
 );
 
 -- Table: Modalidade
 DROP TABLE IF EXISTS Modalidade;
 CREATE TABLE Modalidade (
         ID INT PRIMARY KEY, 
-        Nome STRING, 
-        IdDesporto INT REFERENCES Desporto (ID) ON DELETE SET NULL ON UPDATE CASCADE
-);
-
--- Table: Nacionalidade
-DROP TABLE IF EXISTS Nacionalidade;
-CREATE TABLE Nacionalidade (
-        IdPais INT REFERENCES Pais (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdAtleta INT REFERENCES Atleta (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        DataDeInicio STRING, 
-        PRIMARY KEY (IdPais, IdAtleta)
+        Nome STRING UNIQUE, 
+        IdDesporto INT REFERENCES Desporto (ID) ON DELETE SET NULL ON UPDATE CASCADE UNIQUE
 );
 
 -- Table: Pais
 DROP TABLE IF EXISTS Pais;
 CREATE TABLE Pais (
-        ID INT PRIMARY KEY, 
+        Sigla STRING PRIMARY KEY, 
         Nome STRING UNIQUE
-);
-
--- Table: Ranking
-DROP TABLE IF EXISTS Ranking;
-CREATE TABLE Ranking (
-        Position INT PRIMARY KEY, 
-        Valor DOUBLE, 
-        Ano INT REFERENCES EdiçaoDosJogos (Ano) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdAtleta INT REFERENCES Atleta (ID) ON DELETE SET NULL ON UPDATE CASCADE, 
-        IdEvento INT REFERENCES Evento (ID) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 -- Table: Recorde
@@ -100,14 +85,14 @@ CREATE TABLE Recorde (
 DROP TABLE IF EXISTS TipoDeEvento;
 CREATE TABLE TipoDeEvento (
         ID INT PRIMARY KEY, 
-        Nome STRING
+        Nome STRING UNIQUE
 );
 
 -- Table: TipoDeJogos
 DROP TABLE IF EXISTS TipoDeJogos;
 CREATE TABLE TipoDeJogos (
-        ID INT PRIMARY KEY ASC ON CONFLICT ABORT, 
-        Tipo INT
+        ID INT PRIMARY KEY, 
+        Tipo INT UNIQUE
 );
 
 -- Table: TipoDeRecord
@@ -118,4 +103,3 @@ CREATE TABLE TipoDeRecord (
 );
 
 COMMIT TRANSACTION;
-PRAGMA foreign_keys = on;
