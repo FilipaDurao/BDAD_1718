@@ -10,7 +10,7 @@ INSERT INTO Pais(Sigla, Nome) VALUES ("DEN", "Denmark");
 INSERT INTO Pais(Sigla, Nome) VALUES ("AUS", "Australia");
 INSERT INTO Pais(Sigla, Nome) VALUES ("JAM", "Jamaica");
 INSERT INTO Pais(Sigla, Nome) VALUES ("GBR", "United Kingdom");
-INSERT INTO Pais(Sigla, Nome) VALUES ("CIV", "Cote d'Ivoire");
+INSERT INTO Pais(Sigla, Nome) VALUES ("CIV", "Cote dIvoire");
 INSERT INTO Pais(Sigla, Nome) VALUES ("BUL", "Bulgaria");
 INSERT INTO Pais(Sigla, Nome) VALUES ("KOR", "Korea, South");
 INSERT INTO Pais(Sigla, Nome) VALUES ("TUR", "Turkey");
