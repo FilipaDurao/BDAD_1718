@@ -13,7 +13,7 @@ CREATE TABLE Atleta (
     ID               INT    PRIMARY KEY,
     Nome             STRING NOT NULL ON CONFLICT ABORT,
     DataDeNascimento STRING NOT NULL ON CONFLICT ABORT,
-    Sexo             CHAR   CHECK (Sexo = 'F' || Sexo = 'M'),
+    Sexo             CHAR   CHECK (Sexo = 'F' OR Sexo = 'M'),
     Peso             DOUBLE,
     Altura           DOUBLE,
     SiglaPais        STRING REFERENCES Pais (Sigla) ON DELETE SET NULL
@@ -78,7 +78,7 @@ CREATE TABLE Evento (
     IdModalidade   INT    REFERENCES Modalidade (ID) ON DELETE SET NULL
                                                      ON UPDATE CASCADE
                           NOT NULL ON CONFLICT ABORT,
-    Sexo           CHAR   CHECK (Sexo = 'F' || Sexo = 'M') 
+    Sexo           CHAR   CHECK (Sexo = 'F' OR Sexo = 'M') 
 );
 
 
