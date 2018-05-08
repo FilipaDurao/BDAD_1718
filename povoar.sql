@@ -138,8 +138,8 @@ INSERT INTO TipoDeRecord(ID, Nome) VALUES (0, "Olympic");
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (1, "World");
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (2, "Olympic/World");
 
-INSERT INTO TipoDeJogos(ID, Nome) VALUES (0, "Inverno");
-INSERT INTO TipoDeJogos(ID, Nome) VALUES (1, "Verao");
+INSERT INTO TipoDeJogos(ID, Tipo) VALUES (0, "Inverno");
+INSERT INTO TipoDeJogos(ID, Tipo) VALUES (1, "Verao");
 
 INSERT INTO TipoDeEvento(ID, Nome) VALUES (0, "Semi-final");
 INSERT INTO TipoDeEvento(ID, Nome) VALUES (1, "Final");
