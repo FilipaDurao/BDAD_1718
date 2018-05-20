@@ -136,7 +136,6 @@ INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VA
 
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (0, "Olympic");
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (1, "World");
-INSERT INTO TipoDeRecord(ID, Nome) VALUES (2, "Olympic/World");
 
 INSERT INTO TipoDeJogos(ID, Tipo) VALUES (0, "Inverno");
 INSERT INTO TipoDeJogos(ID, Tipo) VALUES (1, "Verao");
@@ -182,13 +181,14 @@ INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Va
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (1, 19.30, "8/20/2012",579416064, 0, 1);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (2, 47.05, "8/13/2008", 1, 0, 4);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (3, 10.62, "9/24/1998", 2, 0, 2);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "9/29/1998", 2, 2, 3);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "9/29/1998", 2, 0, 3);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (5, 52.70, "8/11/2016",973414226, 0, 5);
 
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (6, 9.58, "8/19/2009",579416064, 1, 0);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (7, 19.19, "8/20/2009",579416064, 1, 1);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (8, 10.49, "7/16/1988", 2, 1, 2);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (9, 46.61, "7/30/2009", 3, 1, 4);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "9/29/1998", 2, 1, 3);
 INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (10, 51.71, "7/23/2017", 350191738, 1, 5);
 
 INSERT INTO EdicaoAtletaEvento(Posicao, Valor, Ano, IdAtleta, IdEvento) VALUES (1, 9.81, 2016, 579416064,0);
