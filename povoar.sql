@@ -156,40 +156,40 @@ INSERT INTO Modalidade(ID, Nome, IdDesporto, Sexo) VALUES (2, "100-meters", 0, '
 INSERT INTO Modalidade(ID, Nome, IdDesporto, Sexo) VALUES (3, "200-meters", 0, 'F');
 INSERT INTO Modalidade(ID, Nome, IdDesporto, Sexo) VALUES (5, "100-meters Freestyle", 1, 'F');
 
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (0, "8/15/2016" , 1, 0);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (1, "8/19/2016", 1, 1);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (2, "8/11/2016", 1, 2);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (3, "8/14/2016", 1, 3);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (4, "8/18/2016", 1, 4);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (5, "8/12/2016", 1, 5);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (0, "15/8/2016" , 1, 0);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (1, "19/8/2016", 1, 1);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (2, "11/8/2016", 1, 2);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (3, "14/8/2016", 1, 3);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (4, "18/8/2016", 1, 4);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (5, "12/8/2016", 1, 5);
 
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (6, "8/15/2008" , 1, 0);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (7, "8/19/2008", 1, 2);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (8, "8/11/2008", 1, 1);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (9, "8/14/2008", 1, 3);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (10, "8/18/2008", 1, 4);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (11, "8/12/2008", 1, 5);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (6, "15/8/2008" , 1, 0);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (7, "19/8/2008", 1, 2);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (8, "11/8/2008", 1, 1);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (9, "14/8/2008", 1, 3);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (10, "18/8/2008", 1, 4);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (11, "12/8/2008", 1, 5);
 
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (12, "8/15/2012" , 1, 0);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (13, "8/19/2012", 1, 2);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (14, "8/11/2012", 1, 1);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (15, "8/14/2012", 1, 3);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (16, "8/18/2012", 1, 4);
-INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (17, "8/12/2012", 1, 5);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (12, "15/8/2012" , 1, 0);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (13, "19/8/2012", 1, 2);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (14, "11/8/2012", 1, 1);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (15, "14/8/2012", 1, 3);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (16, "18/8/2012", 1, 4);
+INSERT INTO Evento(Id, Data, IdTipoDeEvento, IdModalidade) VALUES (17, "12/8/2012", 1, 5);
 
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (0, 9.63, "8/5/2012",579416064, 0, 0);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (1, 19.30, "8/20/2012",579416064, 0, 1);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (2, 47.05, "8/13/2008", 1, 0, 4);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (3, 10.62, "9/24/1998", 2, 0, 2);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "9/29/1998", 2, 0, 3);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (5, 52.70, "8/11/2016",973414226, 0, 5);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (0, 9.63, "5/8/2012",579416064, 0, 0);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (1, 19.30, "20/8/2012",579416064, 0, 1);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (2, 47.05, "13/8/2008", 1, 0, 4);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (3, 10.62, "24/9/1998", 2, 0, 2);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "29/9/1998", 2, 0, 3);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (5, 52.70, "11/8/2016",973414226, 0, 5);
 
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (6, 9.58, "8/19/2009",579416064, 1, 0);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (7, 19.19, "8/20/2009",579416064, 1, 1);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (8, 10.49, "7/16/1988", 2, 1, 2);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (9, 46.61, "7/30/2009", 3, 1, 4);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (4, 21.34, "9/29/1998", 2, 1, 3);
-INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (10, 51.71, "7/23/2017", 350191738, 1, 5);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (6, 9.58, "19/8/2009",579416064, 1, 0);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (7, 19.19, "20/8/2009",579416064, 1, 1);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (8, 10.49, "16/7/1988", 2, 1, 2);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (9, 46.61, "30/7/2009", 3, 1, 4);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (11, 21.34, "29/9/1998", 2, 1, 3);
+INSERT INTO Recorde(ID, Valor, Data, IdAtleta, IdTipoDeRecorde, IdModalidade) Values (10, 51.71, "23/7/2017", 350191738, 1, 5);
 
 INSERT INTO EdicaoAtletaEvento(Posicao, Valor, Ano, IdAtleta, IdEvento) VALUES (1, 9.81, 2016, 579416064,0);
 INSERT INTO EdicaoAtletaEvento(Posicao, Valor, Ano, IdAtleta, IdEvento) VALUES (2, 9.89, 2016, 574761075,0);
