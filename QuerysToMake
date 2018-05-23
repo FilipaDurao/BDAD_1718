@@ -10,3 +10,9 @@ Listar países participantes numa dada edição (ordem alfabética)
 Listar ex-aequo em todas as edições (atletas, lugar, edição, modalidade), (ordenar por edição, prova, alfabeticamente)
 Recordes de uma modalidade (listar todos), (atleta, modalidade, recorde, data), (ordenar por valor[melhor-pior])
 Recordes de uma modalidade (listar de uma edição), (atleta, modalidade, recorde, data), (ordenar por valor[melhor-pior])
+
+Atletas que participaram em todas as modalidades de um desporto
+Quais os atletas que já participaram juntos em mais de x edições
+Qual o 2º atleta que participou em mais edições
+Qual o atleta que participou em mais semifinais e não foi às respetivas finais
+Qual a edição dos jogos com mais recordes
