@@ -1,5 +1,5 @@
 (DONE) Número de medalhas por país em todas as edições (ordenar por nº de medalhas total), (país, nº de medalhas total e por tipo)
-Número de medalhas por atleta em todas as edições (ordenar por nº de medalhas), (atleta, nº de medalhas por tipo)
+(DONE/TYPE REPETITION) Número de medalhas por atleta em todas as edições (ordenar por nº de medalhas), (atleta, nº de medalhas por tipo)
 Listar atletas de uma edição e modalidade
 Listar medalhados de uma modalidade em todas as edições (por ano, por posição) 
 Listar países participantes numa dada edição (ordem alfabética)
