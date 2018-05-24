@@ -2,7 +2,7 @@
 (DONE/TYPE REPETITION) Número de medalhas por atleta em todas as edições (ordenar por nº de medalhas), (atleta, nº de medalhas por tipo)
 (DONE)Listar atletas de uma edição e modalidade
 Listar medalhados de uma modalidade em todas as edições (por ano, por posição) 
-Listar países participantes numa dada edição (ordem alfabética)
+(DONE)Listar países participantes numa dada edição (ordem alfabética)
 Atletas que participaram em todas as modalidades de um desporto
 Quais os atletas que já participaram juntos em mais de x edições
 Qual o 2º atleta que participou em mais edições
