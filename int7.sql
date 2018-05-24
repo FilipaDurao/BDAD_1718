@@ -2,8 +2,8 @@
 .headers on
 .nullvalue NULL
 
-SELECT Atl1.Nome as AtheletOne,
-       Atl2.Nome as AtheletTwo,
+SELECT Atl1.Nome as AtheleOne,
+       Atl2.Nome as AtheleTwo,
        N as NumberOfEditions
 FROM
   (SELECT Id1,
@@ -23,4 +23,5 @@ JOIN Atleta Atl1
 JOIN Atleta Atl2
 WHERE Atl1.ID = Id1
   AND Atl2.ID = Id2
-  AND N >= 2;
+  AND N >= 2
+ORDER BY NumberOfEditions desc, AtheleOne, AtheleTwo;
