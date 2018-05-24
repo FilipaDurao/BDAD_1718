@@ -1,4 +1,7 @@
-.mode columns .headers on .nullvalue NULL
+.mode columns
+.headers on
+.nullvalue NULL
+
 SELECT DISTINCT P.Sigla,
 
   (SELECT COUNT(*)
