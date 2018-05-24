@@ -4,8 +4,7 @@
 (DONE) Listar medalhados de uma modalidade em todas as edições (por ano, por posição) 
 (DONE)Listar países participantes numa dada edição (ordem alfabética)
 Atletas que participaram em todas as modalidades de um desporto
-(DONE)Quais os atletas que já participaram juntos em mais de x edições
+(DONE) Quais os atletas que já participaram juntos em mais de x edições
 Qual o 2º atleta que participou em mais edições
-Qual o atleta que participou em mais semifinais e não foi às respetivas finais
 Qual a edição dos jogos com mais recordes
 Listar os recordes (listar todos), (atleta, modalidade, recorde, data)
