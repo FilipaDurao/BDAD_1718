@@ -143,8 +143,9 @@ INSERT INTO TipoDeJogos(ID, Tipo) VALUES (1, "Verao");
 INSERT INTO TipoDeEvento(ID, Nome) VALUES (0, "Semi-final");
 INSERT INTO TipoDeEvento(ID, Nome) VALUES (1, "Final");
 
+INSERT INTO EdicaoDosJogos(Ano, Cidade, IdTipoDeJogos, SiglaPais) VALUES (2008, "Beijing", 1, 'CHN');
+INSERT INTO EdicaoDosJogos(Ano, Cidade, IdTipoDeJogos, SiglaPais) VALUES (2012, "London", 1, 'GBR');
 INSERT INTO EdicaoDosJogos(Ano, Cidade, IdTipoDeJogos, SiglaPais) VALUES (2016, "Rio de Janeiro", 1, 'BRA');
-INSERT INTO EdicaoDosJogos(Ano, Cidade, IdTipoDeJogos, SiglaPais) VALUES (2018, "Pyeongchang", 0, 'KOR');
 
 INSERT INTO Desporto(ID, Nome) Values (0, "Atheletics");
 INSERT INTO Desporto(ID, Nome) Values (1, "Aquatics");

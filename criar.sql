@@ -35,7 +35,7 @@ CREATE TABLE Desporto (
 DROP TABLE IF EXISTS EdicaoAtletaEvento;
 
 CREATE TABLE EdicaoAtletaEvento (
-    Ano      INT    REFERENCES EdicaoDosJogos ON DELETE SET NULL
+    Ano      INT    REFERENCES EdicaoDosJogos(Ano) ON DELETE SET NULL
                                               ON UPDATE CASCADE,
     IdAtleta INT    REFERENCES Atleta (ID) ON DELETE SET NULL
                                            ON UPDATE CASCADE,
