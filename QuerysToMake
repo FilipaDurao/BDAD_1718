@@ -1,18 +1,11 @@
 Número de medalhas por país em todas as edições (ordenar por nº de medalhas total), (país, nº de medalhas total e por tipo)
 Número de medalhas por atleta em todas as edições (ordenar por nº de medalhas), (atleta, nº de medalhas por tipo)
-Listar atletas de um país numa edição (ordenar por ordem alfabética)
-Listar atletas de uma dada edição de jogos (ordenar por país, por ordem alfabética do nome do atleta)
-Listar atletas de uma dada edição de jogos numa dada prova (ordenar por ordem alfabética)
-Listar atletas de uma modalidade (ordenar por ordem alfabética)
-Listar medalhados de uma prova numa dada edição (ordenar por posição)
+Listar atletas de uma edição e modalidade
 Listar medalhados de uma modalidade em todas as edições (por ano, por posição) 
 Listar países participantes numa dada edição (ordem alfabética)
-Listar ex-aequo em todas as edições (atletas, lugar, edição, modalidade), (ordenar por edição, prova, alfabeticamente)
-Recordes de uma modalidade (listar todos), (atleta, modalidade, recorde, data), (ordenar por valor[melhor-pior])
-Recordes de uma modalidade (listar de uma edição), (atleta, modalidade, recorde, data), (ordenar por valor[melhor-pior])
-
 Atletas que participaram em todas as modalidades de um desporto
 Quais os atletas que já participaram juntos em mais de x edições
 Qual o 2º atleta que participou em mais edições
 Qual o atleta que participou em mais semifinais e não foi às respetivas finais
 Qual a edição dos jogos com mais recordes
+Listar os recordes (listar todos), (atleta, modalidade, recorde, data)
