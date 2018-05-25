@@ -125,7 +125,7 @@ INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VA
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (579416064, "Usain Bolt", "1986-08-21", "M" ,95, 1.96, "JAM");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (156804186, "Veronica Campbell-Brown", "1982-05-15", "F" ,58, 1.68, "JAM");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (34, "Wallace Spearmon", "1984-12-24", "M" ,78, 1.88, "USA");
-INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (4, "Walter Dix", "1986- 01-31", "F" , 80,  1.75, " USA");
+INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (4, "Walter Dix", "1986- 01-31", "F" , 80,  1.75, "USA");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (33, "Warren Weir", "1989-10-31", "M" ,72.57, 1.80, "JAM");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (260382082, "Yannick Agnel", "1992-06-09", "M" ,80, 2.01, "FRA");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (154566738, "Yi Tang", "1993-01-08", "F" ,70, 1.77, "CHN");

@@ -1,9 +1,8 @@
 .mode columns
 .headers on
 .nullvalue NULL
-
 SELECT Atleta.Nome,
-       P as NumberParticipations
+       P AS NumberParticipations
 FROM
   (SELECT IdAtleta,
           COUNT(*) AS P
@@ -12,24 +11,21 @@ FROM
                       Ano
       FROM EdicaoAtletaEvento)
    GROUP BY IdAtleta)
-   JOIN Atleta
+JOIN Atleta
 WHERE P =
-    ( SELECT DISTINCT Participations
+  SELECT DISTINCT MAX(Participations)
+  FROM
+    (SELECT DISTINCT COUNT(*) AS Participations
      FROM
-       (SELECT DISTINCT COUNT(*) AS Participations
+       (SELECT DISTINCT IdAtleta,
+                        Ano
+        FROM EdicaoAtletaEvento)
+     GROUP BY IdAtleta) WHERE Participations !=
+    (SELECT MAX(P)
+     FROM
+       (SELECT DISTINCT COUNT(*) AS P
         FROM
           (SELECT DISTINCT IdAtleta,
                            Ano
            FROM EdicaoAtletaEvento)
-        GROUP BY IdAtleta)
-     WHERE
-         (SELECT COUNT(*)
-          FROM
-            (SELECT DISTINCT COUNT(*) AS P
-             FROM
-               (SELECT DISTINCT IdAtleta,
-                                Ano
-                FROM EdicaoAtletaEvento)
-             GROUP BY IdAtleta)
-          WHERE P > Participations) = 1)
-          AND IdAtleta = Atleta.ID;
+        GROUP BY IdAtleta));
