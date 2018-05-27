@@ -4,7 +4,7 @@
 SELECT Atleta.Nome,
        P AS NumberParticipations
 FROM
-  (SELECT IdAtleta,
+  (SELECT DISTINCT IdAtleta,
           COUNT(*) AS P
    FROM
      (SELECT DISTINCT IdAtleta,
@@ -13,14 +13,15 @@ FROM
    GROUP BY IdAtleta)
 JOIN Atleta
 WHERE P =
-  SELECT DISTINCT MAX(Participations)
+  (SELECT DISTINCT MAX(Participations)
   FROM
     (SELECT DISTINCT COUNT(*) AS Participations
      FROM
        (SELECT DISTINCT IdAtleta,
                         Ano
         FROM EdicaoAtletaEvento)
-     GROUP BY IdAtleta) WHERE Participations !=
+     GROUP BY IdAtleta)
+    WHERE Participations !=
     (SELECT MAX(P)
      FROM
        (SELECT DISTINCT COUNT(*) AS P
@@ -28,4 +29,5 @@ WHERE P =
           (SELECT DISTINCT IdAtleta,
                            Ano
            FROM EdicaoAtletaEvento)
-        GROUP BY IdAtleta));
+        GROUP BY IdAtleta)))
+        AND IdAtleta = Atleta.ID;
