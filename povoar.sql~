@@ -132,7 +132,7 @@ INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VA
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (29, "Yingwen Zhu", "1981-09-09", "F" ,NULL, 1.72, "CHN");
 INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (269473268, "Yohan Blake", "1989-26-12", "M" ,80, 1.8, "JAM");
 
-INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (2, "Florence Delorez Griffith", "1959-21-12", "F", 58, 1.70, "USA");
+INSERT INTO Atleta(ID, Nome, DataDeNascimento, Sexo, Peso, Altura, SiglaPais) VALUES (2, "Florence Delorez Griffith", "12/21/1959", "F", 58, 1.70, "USA");
 
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (0, "Olympic");
 INSERT INTO TipoDeRecord(ID, Nome) VALUES (1, "World");
